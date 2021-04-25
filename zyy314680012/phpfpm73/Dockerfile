@@ -50,3 +50,6 @@ RUN apt-get install -y --no-install-recommends libzip-dev \
 # 安装 wddx 
 RUN apt-get install -y --no-install-recommends libxml2-dev libtidy-dev libxslt1-dev \
 && docker-php-ext-install soap wddx xmlrpc tidy xsl
+
+# 安装 bcmath 扩展
+RUN docker-php-ext-install bcmath
