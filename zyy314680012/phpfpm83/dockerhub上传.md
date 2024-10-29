@@ -15,3 +15,7 @@ docker login
 ```shell
 docker push zyy314680012/phpfpm83:latest
 ```
+
+```shell
+docker build -f Dockerfile-Supervisor -t zyy314680012/phpfpm83:supervisor .
+```
